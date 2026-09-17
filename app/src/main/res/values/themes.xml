@@ -1,0 +1,27 @@
+<resources>
+    <style name="Theme.PassengerDriverApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:editTextStyle">@style/AppEditTextStyle</item>
+        <item name="android:buttonStyle">@style/AppButtonStyle</item>
+        <item name="android:colorAccent">#0AA86B</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
+

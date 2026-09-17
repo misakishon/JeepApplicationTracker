@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#1CCB5C" />
+            <stroke android:width="10dp" android:color="#FFFFFF" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#EAF9FF" />
+            <size android:width="170dp" android:height="170dp" />
+        </shape>
+    </item>
+
+    <item android:top="22dp" android:left="18dp" android:right="18dp" android:bottom="36dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F7A811" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+    <item android:top="36dp" android:left="24dp" android:right="24dp" android:bottom="46dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#1A66D6" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <item android:top="24dp" android:left="34dp" android:right="34dp" android:bottom="56dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFDB5C" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+
+    <item android:top="54dp" android:left="22dp" android:right="22dp" android:bottom="74dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F96A2A" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+
+    <item android:gravity="center" android:width="46dp" android:height="46dp">
+        <shape android:shape="oval">
+            <solid android:color="#EAF9FF" />
+        </shape>
+    </item>
+
+    <item android:gravity="center" android:width="32dp" android:height="32dp">
+        <shape android:shape="oval">
+            <solid android:color="#1CCB5C" />
+        </shape>
+    </item>
+
+    <item android:gravity="center" android:width="14dp" android:height="14dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+
+    <item android:gravity="center" android:width="18dp" android:height="18dp" android:bottom="18dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFB703" />
+        </shape>
+    </item>
+
+    <item android:gravity="bottom" android:bottom="8dp" android:left="10dp" android:right="10dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#0F7A35" />
+            <corners android:topLeftRadius="18dp" android:topRightRadius="18dp" />
+        </shape>
+    </item>
+
+</layer-list>

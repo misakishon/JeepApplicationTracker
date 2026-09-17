@@ -1,0 +1,42 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.passengerdriverapp'
+    compileSdk 35
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    def envFile = rootProject.file('.env')
+    def mapboxToken = ''
+    if (envFile.exists()) {
+        envFile.eachLine { line ->
+            def trimmed = line.trim()
+            if (trimmed.startsWith('MAPBOX_ACCESS_TOKEN=')) {
+                mapboxToken = trimmed.substring('MAPBOX_ACCESS_TOKEN='.length()).trim()
+            }
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.example.passengerdriverapp"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+        buildConfigField 'String', 'MAPBOX_ACCESS_TOKEN', '"' + mapboxToken.replace('"', '\\"') + '"'
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.8.7'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.8.7'
+
+    testImplementation 'junit:junit:4.13.2'
+}

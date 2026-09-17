@@ -1,0 +1,60 @@
+PASSENGER + DRIVER APPLICATION
+==============================
+
+                    MainActivity
+                         |
+                  App Navigation
+                    /         \
+             Passenger       Driver
+                 |              |
+       +---------+--------+   +--+---------+---------+
+       |         |        |   |            |         |
+      Home      Map   Favorites Home       Trips   History
+       |         |        |    |            |         |
+    Profile <----+--------+    Profile <-----+---------+
+
+DATA LAYER
+----------
+Models:
+- User
+- Route
+- Vehicle
+
+Repository:
+- AppRepository
+
+DOMAIN LAYER
+------------
+Use cases:
+- GetRoutesUseCase
+- Future: StartTripUseCase
+- Future: SaveFavoriteRouteUseCase
+- Future: UpdateDriverStatusUseCase
+
+PRESENTATION LAYER
+------------------
+Passenger:
+- home
+- map
+- favorites
+- profile
+
+Driver:
+- home
+- trips
+- history
+- profile
+
+FUTURE SERVICES
+---------------
+- Authentication
+- GPS / live vehicle location
+- Maps SDK
+- Route search
+- Push notifications
+- Driver online/offline status
+- Trip start/end
+- Trip history
+- Favorites
+- REST API
+- Local Room database

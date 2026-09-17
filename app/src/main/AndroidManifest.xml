@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:label="Jeepney Tracker"
+        android:icon="@drawable/logo"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PassengerDriverApp">
+
+        <activity
+            android:name=".presentation.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".presentation.auth.LoginActivity" android:exported="false" />
+        <activity android:name=".presentation.auth.RegisterActivity" android:exported="false" />
+
+        <activity
+            android:name=".presentation.passenger.home.PassengerHomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".presentation.passenger.UserHomePageActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".presentation.passenger.map.MapActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".presentation.passenger.favorites.FavoritesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".presentation.passenger.profile.ProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".presentation.passenger.profile.PassengerPersonalInformationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".presentation.driver.profile.DriverPersonalInformationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".presentation.driver.DriverMainActivity"
+            android:exported="false" />
+
+    </application>
+</manifest>

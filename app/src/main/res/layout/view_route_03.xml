@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="76dp" android:layout_marginTop="5dp"
+    android:background="@drawable/bg_surface_rounded" android:elevation="2dp" android:gravity="center_vertical" android:padding="12dp">
+    <ImageView android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/bg_route_yellow" android:contentDescription="Route 03 bus" android:padding="12dp" android:src="@drawable/ic_directions_bus" android:tint="@color/yellow" />
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Route 03" android:textColor="@color/text_primary" android:textSize="16sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Paoay Terminal" android:textColor="@color/text_secondary" android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="end" android:orientation="vertical">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5 min away" android:textColor="@color/green" android:textSize="15sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Live •" android:textColor="@color/text_secondary" android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

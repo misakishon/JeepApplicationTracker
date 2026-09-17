@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp" android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView android:text="Favorites" android:textSize="25sp"
+        android:textStyle="bold" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView android:text="Routes        Stops" android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent" android:layout_height="45dp"/>
+
+    <TextView android:text="🟢  Route 01\n     Bacarra → 5th Fairview                         ♡"
+        android:padding="18dp" android:background="@android:color/white"
+        android:layout_width="match_parent" android:layout_height="75dp"/>
+
+    <TextView android:text="🔵  Route 02\n     Quiapo → Cubao                               ♡"
+        android:padding="18dp" android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent" android:layout_height="75dp"/>
+
+    <TextView android:text="🟡  Route 04\n     Cubao → Baclaran                            ♡"
+        android:padding="18dp" android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent" android:layout_height="75dp"/>
+</LinearLayout>
